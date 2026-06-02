@@ -1,4 +1,5 @@
 import { Menu, X } from "lucide-react";
+import { motion } from "motion/react";
 
 import { useState } from "react";
 
@@ -40,7 +41,17 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className={styles.containerMobile}>
+        <motion.div
+          className={styles.containerMobile}
+          initial={{ x: "100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: "100%" }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 30,
+          }}
+        >
           <div>
             <div className={styles.containerWrapperName}>
               <span>/</span>
@@ -73,7 +84,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       )}
 
       {/* {open && (
