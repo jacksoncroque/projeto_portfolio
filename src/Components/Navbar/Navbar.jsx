@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { useState } from "react";
 
@@ -40,85 +40,54 @@ const Navbar = () => {
         </button>
       </div>
 
-      {open && (
-        <motion.div
-          className={styles.containerMobile}
-          initial={{ x: "100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "100%" }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 30,
-          }}
-        >
-          <div>
-            <div className={styles.containerWrapperName}>
-              <span>/</span>
-              <span>menu</span>
-              <span>/</span>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            className={styles.containerMobile}
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 30,
+            }}
+          >
+            <div>
+              <div className={styles.containerWrapperName}>
+                <span>/</span>
+                <span>menu</span>
+                <span>/</span>
+              </div>
+              <button
+                onClick={() => setOpen(false)}
+                className={styles.containerMobileButton}
+              >
+                <X />
+              </button>
             </div>
-            <button
-              onClick={() => setOpen(false)}
-              className={styles.containerMobileButton}
-            >
-              <X />
-            </button>
-          </div>
-          <div className={styles.containerMobileLinks}>
-            <ul>
-              <li>
-                <a href="/projects">Projetos</a>
-              </li>
-              <li>
-                <a href="/about">Sobre</a>
-              </li>
-              <li>
-                <a href="/skills">Skills</a>
-              </li>
-              <li>
-                <a href="/journey">Jornada</a>
-              </li>
-              <li>
-                <a href="/contact">Contato</a>
-              </li>
-            </ul>
-          </div>
-        </motion.div>
-      )}
-
-      {/* {open && (
-        <>
-          <div>
-            <div className={styles.containerWrapperName}>
-              <span>/</span>
-              <a href="/">jackson</a>
+            <div className={styles.containerMobileLinks}>
+              <ul>
+                <li>
+                  <a href="/projects">Projetos</a>
+                </li>
+                <li>
+                  <a href="/about">Sobre</a>
+                </li>
+                <li>
+                  <a href="/skills">Skills</a>
+                </li>
+                <li>
+                  <a href="/journey">Jornada</a>
+                </li>
+                <li>
+                  <a href="/contact">Contato</a>
+                </li>
+              </ul>
             </div>
-            <button onClick={() => setOpen(false)}>
-              <X />
-            </button>
-          </div>
-          <div className={styles.containerWrapperLinksMobile}>
-            <ul>
-              <li>
-                <a href="/projects">Projetos</a>
-              </li>
-              <li>
-                <a href="/about">Sobre</a>
-              </li>
-              <li>
-                <a href="/skills">Skills</a>
-              </li>
-              <li>
-                <a href="/journey">Jornada</a>
-              </li>
-              <li>
-                <a href="/contact">Contato</a>
-              </li>
-            </ul>
-          </div>
-        </>
-      )} */}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

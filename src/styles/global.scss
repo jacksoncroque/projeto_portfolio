@@ -2,11 +2,17 @@
   --max-container-width: 1200px;
 
   --primary-color: #fb2017;
+  --secondary-color: #fb2c36;
 
   --primary-text: #e6e6e6;
   --secondary-text: #767676;
 
   --bg-color: #0a0a0a;
+  --bg-color-two: #111111;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --button-radius: 6px;
 }
 
 * {
@@ -19,8 +25,11 @@
     background-color: rgba(#fb2c36, 0.5);
     color: white;
   }
+
+
 }
 
 body {
   background-color: #0a0a0a;
+  font-size: clamp(14px, 1vw, 16px);
 }

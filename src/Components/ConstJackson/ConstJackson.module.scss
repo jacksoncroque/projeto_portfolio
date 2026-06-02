@@ -1,0 +1,48 @@
+@use "breakpoints" as *;
+
+.container {
+  background: var(--bg-color-two);
+  border: 0.5px solid #76767644;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 550px;
+
+  &Wrapper {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px;
+    border-bottom: 1px solid #76767644;
+
+    & > span {
+      color: var(--secondary-text);
+    }
+
+    &Dots {
+      display: flex;
+      gap: 6px;
+
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--secondary-text);
+      }
+    }
+  }
+
+  &Content {
+    padding: 1rem;
+
+    & pre {
+      margin: 0 !important;
+      padding: 0 !important;
+      background: transparent !important;
+    }
+
+    @media (min-width: $mobile) {
+      padding: 2rem;
+    }
+  }
+}
