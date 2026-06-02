@@ -77,6 +77,30 @@
         border: 1px solid #ffffff6b;
       }
     }
+
+    &Contact {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 1rem;
+
+      &Icons {
+        display: flex;
+        align-items: center;
+
+        & > a {
+          color: var(--secondary-text);
+        }
+
+        & > svg {
+          color: var(--secondary-text);
+          width: 1.5rem;
+          height: 1.5rem;
+          display: block;
+          margin: 0 .5rem 0 0;
+        }
+      }
+    }
   }
 
   &Right {
