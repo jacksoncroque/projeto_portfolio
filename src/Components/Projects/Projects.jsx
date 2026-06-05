@@ -1,6 +1,7 @@
-import cn from "classnames";
 import { FiGithub } from "react-icons/fi";
 import { ExternalLink } from "lucide-react";
+import cn from "classnames";
+import { useRef } from "react";
 
 import { projects } from "./data";
 
@@ -9,6 +10,23 @@ import Title from "../Title";
 import styles from "./Projects.module.scss";
 
 const Projects = () => {
+  const videoRef = useRef();
+  const timeoutRef = useRef();
+
+  const handleMouseEnter = (event) => {
+    const video = event.currentTarget;
+
+    video.play().catch(() => {});
+  };
+
+  const handleMouseLeave = (event) => {
+    const video = event.currentTarget;
+
+    video.pause();
+    video.currentTime = 0;
+    video.load();
+  };
+
   return (
     <div className={styles.container} id="projects">
       <div className={styles.containerWrapper}>
@@ -23,7 +41,21 @@ const Projects = () => {
                 [styles.containerWrapperContentProjectRight]: index % 2 !== 0,
               })}
             >
-              <img src={item.image} alt={item.project} />
+              {item.video ? (
+                <video
+                  muted
+                  ref={videoRef}
+                  src={item.video}
+                  poster={item.image}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  crossOrigin="anonymous"
+                >
+                  Seu navegador não suporta o elemento video
+                </video>
+              ) : (
+                <img src={item.image} alt={item.project} />
+              )}
 
               <div>
                 <h3>{item.project}</h3>

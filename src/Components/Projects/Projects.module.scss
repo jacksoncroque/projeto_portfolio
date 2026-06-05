@@ -86,14 +86,15 @@
           }
         }
 
-        & > img {
+        & > img,
+        video {
           width: 100%;
-          height: auto;
           border-radius: 15px;
+          aspect-ratio: 16 / 9;
 
           @media (min-width: $tablet) {
             width: 45%;
-            height: auto;
+            aspect-ratio: 16 / 9;
           }
         }
       }

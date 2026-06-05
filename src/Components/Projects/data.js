@@ -7,6 +7,7 @@ export const projects = [
     code: "https://github.com/jacksoncroque/Weather",
     preview: null,
     image: "/images/projects/weather_app.png",
+    video: null,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const projects = [
     code: "https://github.com/jacksoncroque/landing_page",
     preview: "https://jacksoncroque.github.io/landing_page/",
     image: "/images/projects/landing_page_responsiva.jpeg",
+    video: "/images/videos/landing_page_demo.mp4",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const projects = [
     code: "https://github.com/jacksoncroque/Spotify_UI_Clone",
     preview: "https://jacksoncroque.github.io/Spotify_UI_Clone/",
     image: "/images/projects/spotify_ui_clone.jpeg",
+    video: "/images/videos/spotify_ui_clone_demo.mp4",
   },
   {
     id: 4,
@@ -34,5 +37,6 @@ export const projects = [
     code: "https://github.com/jacksoncroque/youtube_ui_clone",
     preview: "https://jacksoncroque.github.io/youtube_ui_clone/",
     image: "/images/projects/YouTube_ui_clone.jpeg",
+    video: "/images/videos/youtube_ui_clone_demo.mp4",
   },
 ];
