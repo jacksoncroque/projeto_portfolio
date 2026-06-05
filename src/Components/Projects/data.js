@@ -1,0 +1,38 @@
+export const projects = [
+  {
+    id: 1,
+    project: "Weather APP",
+    description: `Aplicação meteorológica que consome dados de uma API externa para exibir previsões em tempo real. O projeto utiliza gerenciamento de estado global com Context API, arquitetura baseada em serviços, componentização e transformação de dados para fornecer uma experiência organizada e escalável. Atualmente em desenvolvimento.`,
+    technologies: ["React", "JavaScript", "SCSS", "Context API", "Fetch API"],
+    code: "https://github.com/jacksoncroque/Weather",
+    preview: null,
+    image: "/images/projects/weather_app.png",
+  },
+  {
+    id: 2,
+    project: "Landing Page",
+    description: `Landing page inspirada em produtos SaaS, desenvolvida com foco em responsividade, componentização e experiência do usuário. O projeto conta com animações utilizando Framer Motion, menu mobile interativo e uma interface moderna construída para se adaptar a diferentes dispositivos.`,
+    technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
+    code: "https://github.com/jacksoncroque/landing_page",
+    preview: "https://jacksoncroque.github.io/landing_page/",
+    image: "/images/projects/landing_page_responsiva.jpeg",
+  },
+  {
+    id: 3,
+    project: "Spotify UI Clone",
+    description: `Clone da interface do Spotify desenvolvido com foco em fidelidade visual, componentização e responsividade. O projeto recria elementos como biblioteca, playlists, artistas populares e navegação da plataforma, utilizando componentes reutilizáveis e carrosséis interativos para simular a experiência da aplicação original.`,
+    technologies: ["React", "JavaScript", "SCSS", "Swiper.js"],
+    code: "https://github.com/jacksoncroque/Spotify_UI_Clone",
+    preview: "https://jacksoncroque.github.io/Spotify_UI_Clone/",
+    image: "/images/projects/spotify_ui_clone.jpeg",
+  },
+  {
+    id: 4,
+    project: "YouTube UI Clone",
+    description: `Clone da interface do YouTube desenvolvido com foco em fidelidade visual, organização de conteúdo e experiência de navegação. O projeto recria elementos como barra lateral, sistema de categorias, listagem de vídeos e player integrado, utilizando componentes reutilizáveis, carrosséis interativos e uma estrutura modular para simular a experiência da plataforma original.`,
+    technologies: ["React", "JavaScript", "SCSS", "Swiper.js"],
+    code: "https://github.com/jacksoncroque/youtube_ui_clone",
+    preview: "https://jacksoncroque.github.io/youtube_ui_clone/",
+    image: "/images/projects/YouTube_ui_clone.jpeg",
+  },
+];

@@ -1,0 +1,25 @@
+@use "breakpoints" as *;
+
+.container {
+  display: flex;
+
+  &Title {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0.5rem 0 0;
+
+    & > span {
+      color: var(--primary-color);
+      margin: 0 0.5rem 0 0;
+    }
+
+    & > h2 {
+      color: #fff;
+    }
+  }
+
+  &Empty {
+    border-bottom: 1px solid #76767644;
+    width: 100%;
+  }
+}
