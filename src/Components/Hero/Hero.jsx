@@ -9,7 +9,7 @@ import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="home">
       <div className={styles.containerLeft}>
         <div className={styles.containerLeftRole}>
           <span>// front-end developer</span>

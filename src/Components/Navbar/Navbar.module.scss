@@ -1,8 +1,9 @@
 @use "breakpoints" as *;
 
 .container {
-  position: relative;
+  position: fixed;
   border-bottom: 0.1px solid #76767634;
+  width: 100%;
 
   &Wrapper {
     display: flex;
@@ -13,6 +14,7 @@
     max-width: var(--max-container-width);
     margin: 0 auto;
     padding: 0 1rem;
+    
 
     &Name {
       & > span {

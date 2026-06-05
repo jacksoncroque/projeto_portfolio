@@ -9,28 +9,28 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={styles.container} id="/">
+    <div className={styles.container}>
       <div className={styles.containerWrapper}>
         <div className={styles.containerWrapperName}>
           <span>/</span>
-          <a href="/">jackson</a>
+          <a href="#home" >jackson</a>
         </div>
         <div className={styles.containerWrapperLinks}>
           <ul>
             <li>
-              <a href="/projects">Projetos</a>
+              <a href="#projects">Projetos</a>
             </li>
             <li>
-              <a href="/about">Sobre</a>
+              <a href="#about">Sobre</a>
             </li>
             <li>
-              <a href="/skills">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="/journey">Jornada</a>
+              <a href="#journey">Jornada</a>
             </li>
             <li>
-              <a href="/contact">Contato</a>
+              <a href="#contact">Contato</a>
             </li>
           </ul>
         </div>
@@ -69,19 +69,19 @@ const Navbar = () => {
             <div className={styles.containerMobileLinks}>
               <ul>
                 <li>
-                  <a href="/projects">Projetos</a>
+                  <a href="#projects">Projetos</a>
                 </li>
                 <li>
-                  <a href="/about">Sobre</a>
+                  <a href="#about">Sobre</a>
                 </li>
                 <li>
-                  <a href="/skills">Skills</a>
+                  <a href="#skills">Skills</a>
                 </li>
                 <li>
-                  <a href="/journey">Jornada</a>
+                  <a href="#journey">Jornada</a>
                 </li>
                 <li>
-                  <a href="/contact">Contato</a>
+                  <a href="#contact">Contato</a>
                 </li>
               </ul>
             </div>
