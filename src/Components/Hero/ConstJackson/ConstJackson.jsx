@@ -9,7 +9,7 @@ export const ConstJackson = () => {
   useEffect(() => {
     async function highlight() {
       const html = await codeToHtml(
-        `const jackson = {
+        `const JacksonCoelhoRoque = {
   role: "Frontend Developer",
   stacks: ["React", "JavaScript", "SASS"],
   learning: ["Next.js", "TypeScript"]
