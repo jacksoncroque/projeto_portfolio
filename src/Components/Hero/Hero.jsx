@@ -18,14 +18,23 @@ const Hero = () => {
       className={styles.container}
       id="home"
     >
-      <div className={styles.containerLeft}>
+      <motion.div
+        className={styles.containerLeft}
+        initial={{ opacity: 0, x: -40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className={styles.containerLeftRole}>
           <DecryptText text="// front-end developer" />
         </div>
         <div className={styles.containerLeftName}>
-          <h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
             Jackson<span>.</span>
-          </h1>
+          </motion.h1>
         </div>
         <div className={styles.containerLeftDescription}>
           <h3>Nem sempre sei a solução de primeira, mas gosto de descobrir como chegar nela.</h3>
@@ -93,7 +102,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.containerRight}>
         <Card>
           <ConstJackson />
