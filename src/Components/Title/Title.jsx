@@ -1,6 +1,6 @@
-import styles from "./Title.module.scss";
+import styles from './Title.module.scss';
 
-const Title = ({index, title}) => {
+const Title = ({ index, title }) => {
   return (
     <div className={styles.container}>
       <div className={styles.containerTitle}>

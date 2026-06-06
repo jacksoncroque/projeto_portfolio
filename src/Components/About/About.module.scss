@@ -1,7 +1,13 @@
-@use "breakpoints" as *;
+@use 'breakpoints' as *;
 
 .container {
   width: 100%;
+  position: relative;
+
+  &About {
+    position: absolute;
+    top: -35%;
+  }
 
   &Wrapper {
     width: 100%;

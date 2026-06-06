@@ -1,4 +1,4 @@
-@use "breakpoints" as *;
+@use 'breakpoints' as *;
 
 .container {
   display: flex;
@@ -92,14 +92,19 @@
           color: var(--secondary-text);
           display: flex;
           align-items: center;
+          transition: all ease-in 0.3s;
 
           & > svg {
-            color: var(--secondary-text);
+            color: inherit;
             width: 1.5rem;
             height: 1.5rem;
             display: block;
             margin: 0 0.5rem 0 0;
           }
+        }
+
+        & > a:hover {
+          color: #fff;
         }
       }
     }

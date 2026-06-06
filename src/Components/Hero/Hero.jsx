@@ -1,18 +1,26 @@
-import { ArrowRightIcon } from "lucide-react";
-import { FiGithub } from "react-icons/fi";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { IoNewspaperOutline } from "react-icons/io5";
+import { ArrowRightIcon } from 'lucide-react';
+import { FiGithub } from 'react-icons/fi';
+import { SlSocialLinkedin } from 'react-icons/sl';
+import { IoNewspaperOutline } from 'react-icons/io5';
+import { motion } from 'framer-motion';
 
-import { ConstJackson } from "./ConstJackson/ConstJackson";
+import { ConstJackson } from './ConstJackson/ConstJackson';
+import DecryptText from '../DecryptText';
+import Card from './ConstJackson/Card';
 
-import styles from "./Hero.module.scss";
+import styles from './Hero.module.scss';
+
+const MotionArrow = motion(ArrowRightIcon);
 
 const Hero = () => {
   return (
-    <div className={styles.container} id="home">
+    <div
+      className={styles.container}
+      id="home"
+    >
       <div className={styles.containerLeft}>
         <div className={styles.containerLeftRole}>
-          <span>// front-end developer</span>
+          <DecryptText text="// front-end developer" />
         </div>
         <div className={styles.containerLeftName}>
           <h1>
@@ -20,17 +28,42 @@ const Hero = () => {
           </h1>
         </div>
         <div className={styles.containerLeftDescription}>
-          <h3>
-            Nem sempre sei a solução de primeira, mas gosto de descobrir como
-            chegar nela.
-          </h3>
+          <h3>Nem sempre sei a solução de primeira, mas gosto de descobrir como chegar nela.</h3>
         </div>
         <div className={styles.containerLeftButtons}>
-          <button>
+          <motion.button
+            onClick={() => {
+              location.href = '#projects';
+            }}
+            whileHover="hover"
+          >
             Ver Projetos
-            <ArrowRightIcon />
-          </button>
-          <button>Entrar em contato</button>
+            <motion.div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+              }}
+              variants={{
+                hover: {
+                  x: 5,
+                },
+              }}
+            >
+              <ArrowRightIcon size={16} />
+            </motion.div>
+          </motion.button>
+          <motion.button
+            onClick={() => {
+              window.location.href = '#contact';
+            }}
+            whileHover={{
+              scale: 1.01,
+              boxShadow: '0 0 0 1px #fff',
+            }}
+            transition={{ duration: 0.2 }}
+          >
+            Entrar em contato
+          </motion.button>
         </div>
         <div className={styles.containerLeftContact}>
           <div className={styles.containerLeftContactIcons}>
@@ -52,10 +85,9 @@ const Hero = () => {
             </a>
           </div>
           <div className={styles.containerLeftContactIcons}>
-            {" "}
             <a
               href="public/docs/Jackson_Coelho_Dev.pdf"
-              download={"Jackson_Coelho_Dev"}
+              download={'Jackson_Coelho_Dev'}
             >
               <IoNewspaperOutline /> Currículo
             </a>
@@ -63,7 +95,9 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.containerRight}>
-        <ConstJackson />
+        <Card>
+          <ConstJackson />
+        </Card>
       </div>
     </div>
   );

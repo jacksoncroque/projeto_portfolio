@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { codeToHtml } from "shiki";
+import { useEffect, useState } from 'react';
+import { codeToHtml } from 'shiki';
 
-import styles from "./ConstJackson.module.scss";
+import styles from './ConstJackson.module.scss';
 
 export const ConstJackson = () => {
-  const [html, setHtml] = useState("");
+  const [html, setHtml] = useState('');
 
   useEffect(() => {
     async function highlight() {
@@ -15,8 +15,8 @@ export const ConstJackson = () => {
   learning: ["Next.js", "TypeScript"]
 }`,
         {
-          lang: "javascript",
-          theme: "github-dark",
+          lang: 'javascript',
+          theme: 'github-dark',
         },
       );
 

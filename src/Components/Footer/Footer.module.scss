@@ -1,4 +1,4 @@
-@use "breakpoints" as *;
+@use 'breakpoints' as *;
 
 .container {
   width: 100%;
@@ -14,12 +14,21 @@
 
     & div {
       margin: 2rem 0 0 0;
-      display: flex;
-      justify-content: space-between;
+      display: block;
+      align-items: center;
+      text-align: center;
       width: 100%;
+
+      @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
 
       & > p {
         color: var(--secondary-text);
+        display: block;
+        margin: 0.5rem 0 0 0;
       }
     }
   }

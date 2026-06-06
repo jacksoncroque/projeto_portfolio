@@ -1,9 +1,10 @@
-@use "breakpoints" as *;
+@use 'breakpoints' as *;
 
 .container {
   position: fixed;
   border-bottom: 0.1px solid #76767634;
   width: 100%;
+  z-index: 5;
 
   &Wrapper {
     display: flex;
@@ -14,7 +15,6 @@
     max-width: var(--max-container-width);
     margin: 0 auto;
     padding: 0 1rem;
-    
 
     &Name {
       & > span {
@@ -61,11 +61,18 @@
     }
   }
 
+  &Backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   &Mobile {
-    position: absolute;
+    position: fixed;
     width: 79%;
     height: 100vh;
-    z-index: 10;
+    z-index: 999;
     right: 0;
     top: 0;
     background-color: var(--bg-color);

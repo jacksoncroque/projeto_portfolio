@@ -1,7 +1,13 @@
-@use "breakpoints.scss" as *;
+@use 'breakpoints.scss' as *;
 
 .container {
   width: 100%;
+  position: relative;
+
+  &Skills {
+    position: absolute;
+    top: -50%;
+  }
 
   &Wrapper {
     width: 100%;
