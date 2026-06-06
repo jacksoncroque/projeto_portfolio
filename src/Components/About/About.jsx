@@ -37,7 +37,7 @@ const About = () => {
           </div>
           <div className={styles.containerWrapperContentImage}>
             <img
-              src="/public/images/Jackson.jpg"
+              src="/images/Jackson.jpg"
               alt="Jackson"
             />
           </div>
