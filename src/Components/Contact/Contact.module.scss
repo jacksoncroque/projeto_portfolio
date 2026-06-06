@@ -1,0 +1,56 @@
+@use "breakpoints" as *;
+
+.container {
+  width: 100%;
+
+  &Wrapper {
+    width: 100%;
+    margin: 5rem auto;
+    max-width: var(--max-container-width);
+    padding: 0 1rem;
+
+    &Content {
+      width: 100%;
+
+      @media (min-width: $tablet) {
+        width: 50%;
+      }
+
+      & > p {
+        color: var(--secondary-text);
+        margin: 3rem 0 1.5rem 0;
+        font-size: 1.2rem;
+      }
+
+      &Item {
+        & > ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          & > li {
+            & > a {
+              color: var(--secondary-text);
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              border-bottom: 1px solid #76767644;
+              padding: 1rem 0;
+
+              & > svg {
+                width: 1.25rem;
+                height: 1.25rem;
+              }
+
+              & > svg:last-of-type {
+                width: 1rem;
+                display: block;
+                margin-left: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
