@@ -7,6 +7,7 @@ import Projects from "./Components/Projects/Projects";
 import About from "./Components/About/About";
 import Stacks from "./Components/Stacks/Stacks";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About/>
       <Stacks />
       <Contact />
+      <Footer />
     </>
   );
 }

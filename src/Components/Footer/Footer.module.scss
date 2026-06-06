@@ -1,0 +1,26 @@
+@use "breakpoints" as *;
+
+.container {
+  width: 100%;
+
+  &Wrapper {
+    width: 100%;
+    margin: 5rem auto;
+    max-width: var(--max-container-width);
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #76767644;
+
+    & div {
+      margin: 2rem 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      & > p {
+        color: var(--secondary-text);
+      }
+    }
+  }
+}
