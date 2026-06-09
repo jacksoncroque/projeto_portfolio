@@ -5,9 +5,9 @@ export const projects = [
     description: `Aplicação meteorológica que consome dados de uma API externa para exibir previsões em tempo real. O projeto utiliza gerenciamento de estado global com Context API, arquitetura baseada em serviços, componentização e transformação de dados para fornecer uma experiência organizada e escalável. Atualmente em desenvolvimento.`,
     technologies: ['React', 'JavaScript', 'SCSS', 'Context API', 'Fetch API'],
     code: 'https://github.com/jacksoncroque/Weather',
-    preview: null,
-    image: '/images/projects/weather_app.png',
-    video: null,
+    preview: "https://jacksoncroque.github.io/Weather/",
+    image: '/images/projects/weather_app.jpeg',
+    video: "/images/videos/demo_weather_app.mp4",
   },
   {
     id: 2,
