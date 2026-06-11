@@ -95,7 +95,7 @@ const Hero = () => {
           </div>
           <div className={styles.containerLeftContactIcons}>
             <a
-              href="public/docs/Jackson_Coelho_Dev.pdf"
+              href="/docs/Jackson_Coelho_Dev.pdf"
               download={'Jackson_Coelho_Dev'}
             >
               <IoNewspaperOutline /> Currículo
