@@ -11,6 +11,17 @@ export const projects = [
   },
   {
     id: 2,
+    project: 'Vínculo',
+    description: `Rede social em desenvolvimento focada em conexões simples entre amigos. O projeto utiliza autenticação de usuários, gerenciamento de estado global com Context API, rotas protegidas, persistência de sessão no localStorage, arquitetura baseada em serviços e componentização para oferecer uma experiência organizada, leve e escalável.`,
+    technologies: ['React', 'JavaScript', 'SCSS', 'Context API', 'React Router', 'Fetch API'],
+    code: 'https://github.com/jacksoncroque/vinculo',
+    preview: null,
+    image: '/images/projects/vinculo.png',
+    video: null,
+  },
+
+  {
+    id: 3,
     project: 'Landing Page',
     description: `Landing page inspirada em produtos SaaS, desenvolvida com foco em responsividade, componentização e experiência do usuário. O projeto conta com animações utilizando Framer Motion, menu mobile interativo e uma interface moderna construída para se adaptar a diferentes dispositivos.`,
     technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Framer Motion'],
@@ -20,7 +31,7 @@ export const projects = [
     video: '/images/videos/landing_page_demo.mp4',
   },
   {
-    id: 3,
+    id: 4,
     project: 'Spotify UI Clone',
     description: `Clone da interface do Spotify desenvolvido com foco em fidelidade visual, componentização e responsividade. O projeto recria elementos como biblioteca, playlists, artistas populares e navegação da plataforma, utilizando componentes reutilizáveis e carrosséis interativos para simular a experiência da aplicação original.`,
     technologies: ['React', 'JavaScript', 'SCSS', 'Swiper.js'],
@@ -30,7 +41,7 @@ export const projects = [
     video: '/images/videos/spotify_ui_clone_demo.mp4',
   },
   {
-    id: 4,
+    id: 5,
     project: 'YouTube UI Clone',
     description: `Clone da interface do YouTube desenvolvido com foco em fidelidade visual, organização de conteúdo e experiência de navegação. O projeto recria elementos como barra lateral, sistema de categorias, listagem de vídeos e player integrado, utilizando componentes reutilizáveis, carrosséis interativos e uma estrutura modular para simular a experiência da plataforma original.`,
     technologies: ['React', 'JavaScript', 'SCSS', 'Swiper.js'],
