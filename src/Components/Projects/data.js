@@ -12,12 +12,12 @@ export const projects = [
   {
     id: 2,
     project: 'Vínculo',
-    description: `Rede social em desenvolvimento focada em conexões simples entre amigos. O projeto utiliza autenticação de usuários, gerenciamento de estado global com Context API, rotas protegidas, persistência de sessão no localStorage, arquitetura baseada em serviços e componentização para oferecer uma experiência organizada, leve e escalável.`,
+    description: `Rede social focada em conexões simples entre amigos. O projeto utiliza autenticação de usuários, gerenciamento de estado global com Context API, rotas protegidas, persistência de sessão no localStorage, arquitetura baseada em serviços e componentização para oferecer uma experiência organizada, leve e escalável.`,
     technologies: ['React', 'JavaScript', 'SCSS', 'Context API', 'React Router', 'Fetch API'],
     code: 'https://github.com/jacksoncroque/vinculo',
     preview: null,
-    image: '/images/projects/vinculo.png',
-    video: null,
+    image: '/images/projects/vinculo.jpeg',
+    video: '/images/videos/demo_vinculo.mp4',
   },
 
   {
