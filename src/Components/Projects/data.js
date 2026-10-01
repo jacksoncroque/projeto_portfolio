@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     project: 'Weather APP',
-    description: `Aplicação meteorológica que consome dados de uma API externa para exibir previsões em tempo real. O projeto utiliza gerenciamento de estado global com Context API, arquitetura baseada em serviços, componentização e transformação de dados para fornecer uma experiência organizada e escalável. Atualmente em desenvolvimento.`,
+    description: `Aplicação meteorológica que consome dados de uma API externa para exibir previsões em tempo real. O projeto utiliza gerenciamento de estado global com Context API, arquitetura baseada em serviços, componentização e transformação de dados para fornecer uma experiência organizada e escalável.`,
     technologies: ['React', 'JavaScript', 'SCSS', 'Context API', 'Fetch API'],
     code: 'https://github.com/jacksoncroque/Weather',
     preview: 'https://jacksoncroque.github.io/Weather/',
@@ -19,9 +19,19 @@ export const projects = [
     image: '/images/projects/vinculo.jpeg',
     video: '/images/videos/demo_vinculo.mp4',
   },
-
   {
     id: 3,
+    project: 'VIBRA',
+    description: `Site oficial da VIBRA, marca de presentes personalizados para transformar momentos especiais em lembranças únicas. O site apresenta canecas, copos, ecobags e kits, com uma experiência visual focada em identidade, personalização e conversão para orçamento via WhatsApp.`,
+    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Framer Motion'],
+    code: 'https://github.com/jacksoncroque/vibra',
+    preview: 'https://vibrapresentes.com/',
+    image: '/images/projects/vibra.jpeg',
+    video: '/images/videos/demo_vibra.mp4',
+  },
+
+  {
+    id: 4,
     project: 'Landing Page',
     description: `Landing page inspirada em produtos SaaS, desenvolvida com foco em responsividade, componentização e experiência do usuário. O projeto conta com animações utilizando Framer Motion, menu mobile interativo e uma interface moderna construída para se adaptar a diferentes dispositivos.`,
     technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Framer Motion'],
@@ -31,7 +41,7 @@ export const projects = [
     video: '/images/videos/landing_page_demo.mp4',
   },
   {
-    id: 4,
+    id: 5,
     project: 'Spotify UI Clone',
     description: `Clone da interface do Spotify desenvolvido com foco em fidelidade visual, componentização e responsividade. O projeto recria elementos como biblioteca, playlists, artistas populares e navegação da plataforma, utilizando componentes reutilizáveis e carrosséis interativos para simular a experiência da aplicação original.`,
     technologies: ['React', 'JavaScript', 'SCSS', 'Swiper.js'],
@@ -41,7 +51,7 @@ export const projects = [
     video: '/images/videos/spotify_ui_clone_demo.mp4',
   },
   {
-    id: 5,
+    id: 6,
     project: 'YouTube UI Clone',
     description: `Clone da interface do YouTube desenvolvido com foco em fidelidade visual, organização de conteúdo e experiência de navegação. O projeto recria elementos como barra lateral, sistema de categorias, listagem de vídeos e player integrado, utilizando componentes reutilizáveis, carrosséis interativos e uma estrutura modular para simular a experiência da plataforma original.`,
     technologies: ['React', 'JavaScript', 'SCSS', 'Swiper.js'],
